@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>face</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <style>
         .face {
-            display: block;
-            align-items: center;
-            justify-content: center;
-            width: 100PX;
-            height: 100PX;
+            width: 500PX;
+            height: 500PX;
             position: relative;
             background-color: orange;
+        }
+
+        .eye {
+            width: 100PX;
+            height: 100PX;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
         }
     </style>
 </head>
@@ -23,14 +28,14 @@
         <div class="eye">
             <dive class="circle"></dive>
         </div>
-    </div>
-
-    <div class="face">
         <div class="eye">
             <dive class="circle"></dive>
         </div>
+
+        <div class="mouth"></div>
     </div>
-    <div class="mouth"></div>
+
+
 </body>
 
 </html>
