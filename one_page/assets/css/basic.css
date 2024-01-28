@@ -228,7 +228,7 @@ body {
     align-items: center;
     position: relative;
     z-index: 2;
-    margin-bottom: 200px;
+    margin-bottom: 50px
 }
 
 .flow .item .circle {
@@ -236,6 +236,15 @@ body {
     height: 30px;
     background: rgb(16, 148, 148);
     border-radius: 30px;
+}
+
+.flow .item:nth-child(even) .tip {
+    right: calc(50% + 50px);
+    left: unset;
+}
+
+.flow .item:nth-child(even) .circle {
+    background: yellow;
 }
 
 .flow .item .tip {
