@@ -16,6 +16,12 @@ body {
 .header {
     margin: 10px auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
     gap: 5px;
     align-items: center;
 }
@@ -119,7 +125,6 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    cursor: pointer;
     transition-property: background-color;
     transition-duration: 0.2s;
 }
@@ -147,6 +152,7 @@ body {
     background: #ffffff;
     border-radius: 2px;
     position: relative;
+    cursor: pointer;
 }
 
 .todo-checkbox::after {
@@ -165,8 +171,40 @@ body {
     opacity: 1;
 }
 
+
+.todo-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.todo-remove {
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.todo-remove:hover {
+    color: rgb(255, 111, 111);
+}
+
 @media screen and (max-width: 650px) {
     #todo-data {
         grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .header-fn {
+        width: 100%;
+    }
+
+    .header-fn .btn {
+        width: 100%;
     }
 }
